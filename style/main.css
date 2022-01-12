@@ -1,0 +1,157 @@
+/*Declaração de variaveis no CSS*/
+:root{
+    --vermelho:#E50914;
+    --preto:#1C1C1C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Para os elementos não utrapassarem o tamanho da caixa */
+}
+
+/*Base da pagina*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+/*Navegação da pagina*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 6rem;
+}
+
+.menu-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.logo{ 
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-left nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 75%;
+    padding-left: 5%;
+}
+
+.menu-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.menu-left nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 11px;
+}
+
+.menu-left nav a:hover{
+    color: #fff;
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/capa-house.jpg); 
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+} 
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+/*carousel de conteudos*/
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:1%;
+    margin-bottom: 2%;
+}
+
+.titulo-secao{
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    color: #fff;
+}
+
+.item{
+    padding: 1%;
+}
+
+.item p{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
